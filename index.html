@@ -5,49 +5,87 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>collapsible.css</title>
+    <title>Collapsible.css</title>
 
-    <meta name="description" content="">
+    <meta name="description" content="Pure CSS collapsibles elements">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300,200' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="demo/css/normalize.css">
+    <link rel="stylesheet" href="dist/collapsible.css">
+    <link rel="stylesheet" href="demo/css/prism.css">
+    <link rel="stylesheet" href="demo/css/main.css">
 
 </head>
 
 <body>
 
-    <div data-collapsible data-collapsible-on-sm>
+    <header class="header">
+        <h1>Collapsible.css</h1>
+        <p class="headline">Pure CSS collapsibles elements</p>
+    </header>
 
-        <input id="nav-collapse" type="checkbox">
-        <label for="nav-collapse" onclick>Navigation</label>
+    <div class="container">
 
-        <div class="collapsible-content">
-            <strong>I'm collapsible on small screens</strong>
-            <ul>
-                <li><a href="#">Nav item 1</a></li>
-                <li><a href="#">Nav item 2</a></li>
-                <li><a href="#">Nav item 3</a></li>
-            </ul>
+        <h2>Usage</h2>
+
+<pre><code class="language-html">&lt;div data-collapsible&gt;
+
+    &lt;input id="example2" type="checkbox" checked&gt;
+    &lt;label for="example2" onclick&gt;Show&lt;/label&gt;
+
+    &lt;div class="collapsible-content"&gt;
+        &lt;strong&gt;I'm always collapsible&lt;/strong&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        &lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+        <div data-collapsible>
+
+            <input id="example3" type="checkbox" checked>
+            <label for="example3" onclick>Show</label>
+
+            <div class="collapsible-content">
+                <strong>I'm always collapsible and collapsed by default</strong>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat lectus mi, vel consectetur massa vulputate in. Donec vestibulum, dui non facilisis congue, ex nisi bibendum urna, in lacinia enim dolor sed risus. Nunc tristique malesuada mauris, at accumsan velit aliquam vitae. Sed ultricies risus sit amet velit consequat lacinia. Sed non ornare erat. Suspendisse convallis velit dapibus orci sollicitudin malesuada.
+                </p>
+            </div>
+
+        </div>
+
+        <div data-collapsible data-collapsible-on-sm>
+
+            <input id="example1" type="checkbox">
+            <label for="example1" onclick>Show</label>
+
+            <div class="collapsible-content">
+                <strong>I'm collapsible on small screens only (<= 600px)</strong>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat lectus mi, vel consectetur massa vulputate in. Donec vestibulum, dui non facilisis congue, ex nisi bibendum urna, in lacinia enim dolor sed risus. Nunc tristique malesuada mauris, at accumsan velit aliquam vitae. Sed ultricies risus sit amet velit consequat lacinia. Sed non ornare erat. Suspendisse convallis velit dapibus orci sollicitudin malesuada.
+                </p>
+            </div>
+
         </div>
 
     </div>
 
-    <div data-collapsible>
+    <footer class="footer">
 
-        <input id="big-text-collapse" type="checkbox">
-        <label for="big-text-collapse" onclick>Big text</label>
+        <p>Made with love by <a href="https://github.com/Glitchbone" target="_blank"><strong>Glitchbone</strong></a></p>
 
-        <div class="collapsible-content">
-            <strong>I'm always collapsible</strong>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat lectus mi, vel consectetur massa vulputate in. Donec vestibulum, dui non facilisis congue, ex nisi bibendum urna, in lacinia enim dolor sed risus. Nunc tristique malesuada mauris, at accumsan velit aliquam vitae. Sed ultricies risus sit amet velit consequat lacinia. Sed non ornare erat. Suspendisse convallis velit dapibus orci sollicitudin malesuada.
-            </p>
-        </div>
+        <a href="https://github.com/Glitchbone" target="_blank">
+            <img class="avatar" width="100" height="100" src="https://avatars2.githubusercontent.com/u/1768692?v=3&s=460" />
+        </a>
 
-    </div>
+    </footer>
 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="demo/js/prism.js"></script>
+    <script src="demo/js/main.js"></script>
 
 </body>
 
