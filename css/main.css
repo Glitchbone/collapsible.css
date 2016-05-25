@@ -1,0 +1,50 @@
+/* line 5, ../src/sass/_style.scss */
+[data-collapsible] > input[type="checkbox"] {
+  display: none;
+}
+/* line 11, ../src/sass/_style.scss */
+[data-collapsible] > input[type="checkbox"]:checked ~ label::after {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 15, ../src/sass/_style.scss */
+[data-collapsible] > input[type="checkbox"]:checked ~ .collapsible-content {
+  display: block;
+}
+/* line 23, ../src/sass/_style.scss */
+[data-collapsible] > label {
+  display: block;
+  padding: 8px;
+  color: #262626;
+  background-color: #dcdedf;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+/* line 33, ../src/sass/_style.scss */
+[data-collapsible] > label::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: #262626 transparent transparent transparent;
+}
+/* line 45, ../src/sass/_style.scss */
+[data-collapsible] .collapsible-content {
+  padding: 8px;
+  display: none;
+}
+@media (min-width: 600px) {
+  /* line 54, ../src/sass/_style.scss */
+  [data-collapsible][data-collapsible-on-sm] > label {
+    display: none;
+  }
+  /* line 58, ../src/sass/_style.scss */
+  [data-collapsible][data-collapsible-on-sm] .collapsible-content {
+    display: block;
+  }
+}

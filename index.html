@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>collapsible.css</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <div data-collapsible data-collapsible-on-sm>
+
+        <input id="nav-collapse" type="checkbox">
+        <label for="nav-collapse" onclick>Navigation</label>
+
+        <div class="collapsible-content">
+            <strong>I'm collapsible on small screens</strong>
+            <ul>
+                <li><a href="#">Nav item 1</a></li>
+                <li><a href="#">Nav item 2</a></li>
+                <li><a href="#">Nav item 3</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div data-collapsible>
+
+        <input id="big-text-collapse" type="checkbox">
+        <label for="big-text-collapse" onclick>Big text</label>
+
+        <div class="collapsible-content">
+            <strong>I'm always collapsible</strong>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat lectus mi, vel consectetur massa vulputate in. Donec vestibulum, dui non facilisis congue, ex nisi bibendum urna, in lacinia enim dolor sed risus. Nunc tristique malesuada mauris, at accumsan velit aliquam vitae. Sed ultricies risus sit amet velit consequat lacinia. Sed non ornare erat. Suspendisse convallis velit dapibus orci sollicitudin malesuada.
+            </p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
